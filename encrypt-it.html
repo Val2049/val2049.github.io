@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encrypt-It</title>
+    <script src="encrypt-it.js"></script>
 </head>
 <body>
     <header>
@@ -27,7 +28,6 @@
             <option value="random">Randomized</option>
           </select>
         </p>
-
         <p>
           <strong>Font Size: </strong>
           <label>
@@ -37,18 +37,15 @@
             <input type="radio" name="text-size" value="24pt">24pt</input>
           </label>
         </p>
-        
         <p>
           <label>
             <strong>All-Caps:</strong>
             <input id="all-caps" type="checkbox" name="uppercase-ouput" value="uppercase"/>
           </label>
         </p>
-
         <button id="encrypt-it">Encrypt It!</button>
         <button id="reset">Reset</button>
       </fieldset>
-
       <div id="result-area">
         <h2>Result:</h2>
         <p id="result"></p>
