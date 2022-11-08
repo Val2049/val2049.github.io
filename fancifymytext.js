@@ -3,12 +3,12 @@ function hello() {
     alert("Hello, world!");
 }
 function bigger(){
-    var textArea = document.getElementById("textArea").style.fontSize = "24px";
+    document.getElementById("textArea").style.fontSize = '24px';
     alert("Text is bigger");
     hello();
   }
   function fancy(){
-    var textFancy = document.getElementById("textFancy");
+    let textFancy = document.getElementById("textFancy");
     if(document.getElementById("fancy").checked){
         textArea.style.fontWeight = "bold";
         textArea.style.textDecoration = "underline";
@@ -17,14 +17,16 @@ function bigger(){
     }
   }
   function moo() {
-    var textArea = document.getElementById("textArea");
-    var text = textArea.value;
-    var newText = text.toUpperCase();
-    var mooText = newText.split(".").join("-Moo.");
+    /* document.getElementById("textArea").style.textTransform="Uppercase"; */
+    
+    document.getElementById("textArea");
+    let text = textArea.value;
+    let newText = text.toUpperCase();
+    let mooText = newText.split(".").join("-Moo.");
     textArea.value = mooText;
   }
   function boring(){
-    var textArea= document.getElementById("textArea");
+    document.getElementById("textArea");
     if(document.getElementById("boring").checked) {
         textArea.style.fontWeight = "normal";
         textArea.style.textDecoration = "none";
