@@ -1,9 +1,11 @@
+/*alert("Hello, world!"); */
 function hello() {
     alert("Hello, world!");
 }
 function bigger(){
     var textArea = document.getElementById("textArea").style.fontSize = "24px";
     alert("Text is bigger");
+    hello
   }
   function fancy(){
     var textFancy = document.getElementById("textFancy");
