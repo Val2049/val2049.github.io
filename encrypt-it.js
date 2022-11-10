@@ -12,14 +12,14 @@ console.log("Window loaded!");
     let encryptButton = document.getElementById("encrypt-it");
     encryptButton.addEventListener("click", handleClick);
     let resetButton = document.getElementById("reset");
-    resetButton.addEventListener("click", reset)
+    resetButton.addEventListener("click", reset);
   }
 
 
   function handleClick() {
     console.log("Window loaded!");
-    let inputText = document.getElementById("input-text");
-    let result = shiftCipher(inputText);
+    var userInput = document.getElementById("input-text");
+    var result = shiftCipher(userInput);
     document.getElementById("result").textContent = result;
   }
 
